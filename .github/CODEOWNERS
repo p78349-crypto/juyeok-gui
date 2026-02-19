@@ -1,9 +1,6 @@
-# Replace @YOUR_GITHUB_ID and/or @YOUR_ORG/your-team with real owners.
-# Example: * @plain
-
 # Default owner for all files
-* @YOUR_GITHUB_ID
+* @p78349-crypto
 
 # Release/compliance assets
-.github/workflows/** @YOUR_GITHUB_ID
-.github/pull_request_template.md @YOUR_GITHUB_ID
+.github/workflows/** @p78349-crypto
+.github/pull_request_template.md @p78349-crypto
