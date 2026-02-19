@@ -34,7 +34,7 @@ if ([string]::IsNullOrWhiteSpace($plain)) {
 & $keytool.Source -genkeypair -v -storetype JKS -keystore $target -alias $Alias -keyalg RSA -keysize 2048 -validity 10000 -storepass $plain -keypass $plain -dname $Dname
 
 $props = @(
-  "storeFile=release-keystore/juyeok-release.jks"
+  "storeFile=../release-keystore/juyeok-release.jks"
   "storePassword=$plain"
   "keyAlias=$Alias"
   "keyPassword=$plain"
