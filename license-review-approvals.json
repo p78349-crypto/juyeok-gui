@@ -1,0 +1,24 @@
+{
+  "approvals": [
+    {
+      "package": "@trapezedev/gradle-parse@7.1.3",
+      "resolvedLicense": "MIT",
+      "note": "package.json is SEE LICENSE but bundled LICENSE file is MIT"
+    },
+    {
+      "package": "@trapezedev/project@7.1.3",
+      "resolvedLicense": "MIT",
+      "note": "package.json is SEE LICENSE but bundled LICENSE file is MIT"
+    },
+    {
+      "package": "expand-template@2.0.3",
+      "resolvedLicense": "MIT",
+      "note": "dual licensed (MIT OR WTFPL); compliance decision uses MIT terms"
+    },
+    {
+      "package": "spdx-exceptions@2.5.0",
+      "resolvedLicense": "CC-BY-3.0",
+      "note": "SPDX metadata package used transitively in build tooling only"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "juyeok-gui-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "주역 GUI 모바일 배포용 Capacitor 프로젝트",
+  "scripts": {
+    "build:web": "node scripts/build-web.mjs",
+    "i18n:check": "node scripts/check-i18n-coverage.mjs",
+    "license:audit": "node scripts/audit-third-party-licenses.mjs",
+    "verify:release": "npm run i18n:check && npm run license:audit && npm run build:web",
+    "assets:generate": "npx @capacitor/assets generate --android --ios --iconBackgroundColor '#2563eb' --splashBackgroundColor '#f5f7fb'",
+    "android:keystore:create": "pwsh -File scripts/create-android-keystore.ps1",
+    "android:release:aab": "pwsh -File scripts/build-android-release.ps1 -Aab",
+    "android:release:apk": "pwsh -File scripts/build-android-release.ps1 -Apk",
+    "cap:sync:android": "npm run build:web && npx cap sync android",
+    "cap:sync:ios": "npm run build:web && npx cap sync ios",
+    "cap:sync": "npm run build:web && npx cap sync",
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios",
+    "android": "npm run build:web && npx cap sync android && npx cap open android",
+    "ios": "npm run build:web && npx cap sync ios && npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.1.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/android": "^7.1.1",
+    "@capacitor/cli": "^7.1.1",
+    "@capacitor/ios": "^7.1.1"
+  }
+}

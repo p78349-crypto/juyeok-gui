@@ -1,0 +1,18 @@
+{
+  "forbiddenLicensePatterns": [
+    "GPL",
+    "AGPL",
+    "LGPL",
+    "SSPL",
+    "BUSL",
+    "Commons Clause",
+    "PolyForm"
+  ],
+  "reviewRequiredLicensePatterns": [
+    "CC-BY",
+    "WTFPL",
+    "SEE LICENSE",
+    "UNLICENSED"
+  ],
+  "notes": "forbidden 패턴은 배포 차단, reviewRequired 패턴은 고지/법무 검토 대상"
+}
